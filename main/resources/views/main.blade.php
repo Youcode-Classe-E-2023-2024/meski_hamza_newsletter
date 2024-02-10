@@ -10,6 +10,10 @@
             margin-right: 10px;
             transition: all 1s;
         }
+
+        #title1 {
+            text-shadow: 5px 4px 0px rgb(255,255,255);
+        }
     </style>
 
     <!-- Landing page -->
@@ -19,7 +23,7 @@
         </main>
         <main class="h-screen w-full absolute top-0 left-0 flex items-center justify-center" >
             <div id="subscribe-section" class="space-y-4 flex flex-col items-center text-white backdrop-blur-sm px-12 py-20 border-2 border-solid border-white hover:border-green-500 hover:border-4" style="background-color: rgba(0, 0, 0, 0.203);">
-                <div class="text-4xl font-bold text-green-400">UNLIMITED NEWS:</div>
+                <div id="title1" class="text-6xl font-bold text-green-400 tracking-wide">UNLIMITED NEWS:</div>
                 <div class="text-4xl font-bold text-green-400"> Science, Tech, Economy, ...</div>
                 <div class="text-xl hidden  sm:inline-block">Get access anywhere. Cancel anytime.
                 </div>
