@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 use App\Models\User;
+use Illuminate\Support\Facades\Config;
 use Hash;
 
 class ForgetPasswordController extends Controller

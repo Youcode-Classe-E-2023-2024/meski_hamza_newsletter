@@ -30,7 +30,7 @@ class AuthController extends Controller
         }
         User::create($validated);
 
-        return redirect()->route('main');
+        return redirect()->route('login');
     }
 
     public function login() {

@@ -3,9 +3,9 @@
     <div class="flex items-center justify-center px-4 sm:px-6 lg:px-8 w-full bg-red- mt-6 h-full" style="background-image: url('http://127.0.0.1:8000/storage/images/landingpageimage.jpg')">
         <div class="space-y-8">
             <div class="backdrop-blur-sm border-2 border-solid border-white p-6 w-full" style="background-color: rgba(0, 0, 0, 0.203);">
-                <img class="mx-auto h-12 w-auto" src="https://www.svgrepo.com/show/499664/user-happy.svg" alt="" />
-                <h2 class="my-3 text-center text-3xl font-bold tracking-tight">
-                    Sign up for an account
+                <h2 class="my-3 text-center text-3xl font-bold tracking-tight flex items-center gap-2 justify-center">
+                    <div>Register</div>
+                    <ion-icon name="happy-outline" class="text-6xl text-white"></ion-icon>
                 </h2>
 
                 <form enctype="multipart/form-data" action="{{ route('register.store') }}" class="space-y-6" method="post">
