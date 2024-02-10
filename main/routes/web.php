@@ -20,15 +20,15 @@ use App\Http\Controllers\ForgetPasswordController;
 Route::get('/', [MainController::class, 'index'])->name('main');
 
 /* auth route */
-Route::get('/register', [AuthController::class, 'register'])->name('register');
+Route::get('/register', [AuthController::class, 'register'])->name('register')->middleware('guest');
 
-Route::post('/register', [AuthController::class, 'store'])->name('register.store');
+Route::post('/register', [AuthController::class, 'store'])->name('register.store')->middleware('guest');
 
-Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/login', [AuthController::class, 'login'])->name('login')->middleware('guest');
 
-Route::post('/login', [AuthController::class, 'authenticate'])->name('login.authenticate');
+Route::post('/login', [AuthController::class, 'authenticate'])->name('login.authenticate')->middleware('guest');
 
-Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth');
 
 /* Admin route */
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.show');
