@@ -51,4 +51,8 @@ class User extends Authenticatable
             return url('storage/' . $this->image);
         }
     }
+
+    public function templates() {
+        return $this->hasMany(Template::class, 'user_id', 'id');
+    }
 }

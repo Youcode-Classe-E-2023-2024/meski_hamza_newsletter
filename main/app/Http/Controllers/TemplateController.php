@@ -8,7 +8,7 @@ use App\Models\Template;
 class TemplateController extends Controller
 {
     public function manage_template() {
-        return view('products.manage-product');
+        return view('templates.manage-template');
     }
 
     public function show(Template $template) {
@@ -17,7 +17,8 @@ class TemplateController extends Controller
 
     public function store() {
         $validated = request()->validate([
-            'title' => 'required|min:5',
+            'name' => 'required|min:5',
+            'subject' => 'required|min:5',
             'content' => 'required|min:5',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:2048'
         ]);

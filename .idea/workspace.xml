@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b7f8b1-12c0-43ce-855f-55052de2503b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/main/resources/views/templates/layout/template-card-to-edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/resources/views/templates/layout/template-card.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/resources/views/templates/layout/template-form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/resources/views/templates/layout/update-template-form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/resources/views/templates/manage-template.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/resources/views/templates/show-template.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/main/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/main/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/TemplateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/TemplateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/app/Models/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Models/Template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/database/migrations/2024_02_10_194625_create_templates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/database/migrations/2024_02_10_194625_create_templates_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/side-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/side-bar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +241,7 @@
       <workItem from="1707553154167" duration="266000" />
       <workItem from="1707554045716" duration="637000" />
       <workItem from="1707554712146" duration="7361000" />
-      <workItem from="1707564911512" duration="24853000" />
+      <workItem from="1707564911512" duration="32498000" />
     </task>
     <servers />
   </component>

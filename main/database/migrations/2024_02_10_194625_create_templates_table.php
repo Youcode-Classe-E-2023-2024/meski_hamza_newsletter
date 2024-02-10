@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('templates', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained('users', 'id')->cascadeOnUpdate()->cascadeOnDelete();
             $table->string('name');
             $table->text('subject');
             $table->text('content');
-            $table->enum('type', ['newsletter1', 'newsletter2', 'newsletter3'])->default('newsletter1');
+            $table->enum('boilerplate', ['newsletter1', 'newsletter2', 'newsletter3'])->default('newsletter1');
             $table->timestamps();
         });
     }

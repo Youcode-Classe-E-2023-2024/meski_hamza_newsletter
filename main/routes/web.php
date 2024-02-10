@@ -5,6 +5,7 @@ use App\Http\Controllers\MainController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ForgetPasswordController;
+use App\Http\Controllers\TemplateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +42,16 @@ Route::post('/forget-password', [ForgetPasswordController::class, 'forgetPasswor
 Route::get('/reset-password/{token}', [ForgetPasswordController::class, 'resetPassword'])->name('reset.password');
 
 Route::post('/reset-password', [ForgetPasswordController::class, 'resetPasswordPost'])->name('reset.password.post');
+
+/* template route */
+Route::get('/template', [TemplateController::class, 'manage_template'])->name('templates.manage-template');
+
+Route::get('/template/{template}', [TemplateController::class, 'show'])->name('templates.show');
+
+Route::post('/template', [TemplateController::class, 'store'])->name('templates.store')->middleware('auth');
+
+Route::get('/template/{template}/edit', [TemplateController::class, 'edit'])->name('templates.edit');
+
+Route::put('/template/{template}', [TemplateController::class, 'update'])->name('templates.update');
+
+Route::delete('/template/{template}', [TemplateController::class, 'destroy'])->name('templates.destroy');
