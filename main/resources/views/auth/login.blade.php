@@ -36,10 +36,18 @@
 
                     <div>
                         <button type="submit"
-                                class="flex w-full justify-center rounded-md border border-transparent bg-sky-400 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2">Login
-                            Account
+                                class="flex w-full justify-center rounded-md border border-transparent bg-green-500 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2">
+                            Login
                         </button>
                     </div>
+                    <div class="flex items-center justify-between mb-4">
+                        <label class="flex items-center">
+                            <input type="checkbox" name="remember" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out">
+                            <span class="ml-2 text-sm text-white font-semi-bold">Remember Me</span>
+                        </label>
+                        <a href="{{ route('forget.password') }}" class="text-sm font-medium text-blue-500 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">Forgot Password?</a>
+                    </div>
+
                 </form>
 
             </div>

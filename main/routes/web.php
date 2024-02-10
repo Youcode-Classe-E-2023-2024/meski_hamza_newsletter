@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ForgetPasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +32,12 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 /* Admin route */
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.show');
+
+// forget-password route
+Route::get('/forget-password', [ForgetPasswordController::class, 'forgetPassword'])->name('forget.password');
+
+Route::post('/forget-password', [ForgetPasswordController::class, 'forgetPasswordPost'])->name('forget.password.post');
+
+Route::get('/reset-password/{token}', [ForgetPasswordController::class, 'resetPassword'])->name('reset.password');
+
+Route::post('/reset-password', [ForgetPasswordController::class, 'resetPasswordPost'])->name('reset.password.post');
