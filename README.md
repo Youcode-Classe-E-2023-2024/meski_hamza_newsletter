@@ -1,2 +1,0 @@
-# meski_hamza_newsletter
-Gestionnaire de Newsletter: une plateforme web robuste utilisant Laravel, qui support des fonctionnalités avancées telles que la gestion de newsletter avec Spatie Newsletter, authentification avec gestion des rôles via les politiques (policies) et gardes (guards), système de récupération de mot de passe et fonction "remember me", Media Library avec Spatie, soft delete, middleware, génération de PDF, et modélisation avec trois rôles (Administrateur, Rédacteur, Membre).
