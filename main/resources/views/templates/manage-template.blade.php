@@ -16,18 +16,30 @@
                         <div class="mb-4">
                             <label for="name" class="block text-sm font-bold mb-2 text-green-500">Name:</label>
                             <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Template Name">
+                            @error('name')
+                                <div class="text-red-500">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="mb-4">
                             <label for="subject" class="block text-sm font-bold mb-2 text-green-500">Subject:</label>
                             <input type="text" id="subject" name="subject" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Template Subject">
+                            @error('subject')
+                            <div class="text-red-500">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="mb-4">
                             <label for="content" class="block text-sm font-bold mb-2 text-green-500">Content:</label>
                             <textarea id="content" name="content" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Template Content"></textarea>
+                            @error('content')
+                            <div class="text-red-500">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="mb-4 text-white">
                             <label for="image" class="block text-sm font-bold mb-2 text-green-500">Image:</label>
                             <input type="file" id="image" name="image" accept="image/*" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            @error('image')
+                            <div class="text-red-500">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="mb-4">
                             <label for="boilerplate" class="block text-sm font-bold mb-2 text-green-500">Choose one of the right side templates:</label>

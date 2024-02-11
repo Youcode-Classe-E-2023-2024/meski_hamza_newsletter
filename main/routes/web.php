@@ -6,7 +6,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ForgetPasswordController;
 use App\Http\Controllers\TemplateController;
-
+use App\Http\Controllers\SendTmeplateController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,6 +19,9 @@ use App\Http\Controllers\TemplateController;
 */
 
 Route::get('/', [MainController::class, 'index'])->name('main');
+
+/* boilerplate route */
+Route::get('/home/{boilerplate}', [MainController::class, 'boilerplate'])->name('boilerplate');
 
 /* auth route */
 Route::get('/register', [AuthController::class, 'register'])->name('register')->middleware('guest');
@@ -55,3 +58,9 @@ Route::get('/template/{template}/edit', [TemplateController::class, 'edit'])->na
 Route::put('/template/{template}', [TemplateController::class, 'update'])->name('templates.update');
 
 Route::delete('/template/{template}', [TemplateController::class, 'destroy'])->name('templates.destroy');
+
+
+/* Send template route */
+Route::post('/template/{template}/send', [SendTmeplateController::class, 'send'])->name('templates.send');
+
+Route::get('/template/{template}/render', [MainController::class, 'renderBoilerplate'])->name('templates.renderBoilerplate');

@@ -1,22 +1,21 @@
-<main class="m-6">
+<main class="m-20">
+    <div class="flex items-center mb-12">
+        <h1 class="mr-2">CATEGORIES:</h1>
+        <a href="{{ route('boilerplate', 1) }}" class="mr-2 hover:text-green-200 px-2 py-1 {{ $boilerplate == 1 ? 'bg-green-500':'' }}">newsletter1</a>
+        <a href="{{ route('boilerplate', 2) }}" class="mr-2 hover:text-green-200 px-2 py-1 {{ $boilerplate == 2 ? 'bg-green-500':'' }}">newsletter2</a>
+        <a href="{{ route('boilerplate', 3) }}" class="hover:text-green-200 px-2 py-1 {{ $boilerplate == 3 ? 'bg-green-500':'' }}">newsletter3</a>
+    </div>
+
+
     @foreach($templates as $template)
-        @include('boilerplate.newsletter2')
+        @if($boilerplate == 1)
+            @include('boilerplate.newsletter1')
+        @elseif($boilerplate == 2)
+            @include('boilerplate.newsletter2')
+        @elseif($boilerplate == 3)
+            @include('boilerplate.newsletter3')
+        @endif
         <div class="my-6"></div>
     @endforeach
 
-{{--    @include('boilerplate.newsletter2')--}}
-{{--    <div class="my-6"></div>--}}
-{{--    @include('boilerplate.newsletter2')--}}
-{{--    <div class="my-6"></div>--}}
-{{--    @include('boilerplate.newsletter2')--}}
 </main>
-
-{{--<div class="my-6"></div>--}}
-{{--@include('boilerplate.newsletter1')--}}
-{{--<div class="my-6"></div>--}}
-{{--@include('boilerplate.newsletter3')--}}
-
-{{--@foreach($templates as $template)--}}
-{{--    <img class="h-full object-cover" src="{{ $template->getUrl() }}" width="733" height="412" />--}}
-{{--    <h1>{{ $template->name }}</h1>--}}
-{{--@endforeach--}}

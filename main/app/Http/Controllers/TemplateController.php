@@ -21,7 +21,7 @@ class TemplateController extends Controller
             'subject' => 'required|min:5',
             'content' => 'required|min:5',
             'boilerplate' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:2048'
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:4048'
         ]);
 
         $validated['user_id'] = auth()->id();
