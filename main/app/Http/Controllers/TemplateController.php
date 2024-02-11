@@ -20,6 +20,7 @@ class TemplateController extends Controller
             'name' => 'required|min:5',
             'subject' => 'required|min:5',
             'content' => 'required|min:5',
+            'boilerplate' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:2048'
         ]);
 
