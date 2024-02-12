@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ForgetPasswordController;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\SendTmeplateController;
+use App\Http\Controllers\SubscribeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -64,3 +65,12 @@ Route::delete('/template/{template}', [TemplateController::class, 'destroy'])->n
 Route::post('/template/{template}/send', [SendTmeplateController::class, 'send'])->name('templates.send');
 
 Route::get('/template/{template}/render', [MainController::class, 'renderBoilerplate'])->name('templates.renderBoilerplate');
+
+
+/* subscribe controller */
+Route::post('/subscribe/proccess', [SubscribeController::class, 'subscribe'])->name('subscribe');
+
+Route::get('/subscribe/section', function() {
+    $logged = true;
+    return view('subscribe', compact('logged'));
+})->name('subscribe.section');

@@ -26,17 +26,26 @@
             </div>
             <div class="text-lg px-8 hidden text-bold sm:inline-block">Ready to explore? Enter your email to create or restart your membership.
             </div>
-            <div class="w-full flex">
-                <input class="w-full focus:outline-none text-gray-400 px-4 py-3 bg-white" placeholder="Email address" type="text">
+            <form action="{{ route('subscribe') }}" method="POST" class="w-full flex">
+                @csrf
+                <div class="flex flex-col w-full">
+                    <input name="email" value="{{ ($logged ?? null) ? auth()->user()->email: '' }}" class="w-full focus:outline-none text-gray-400 px-4 py-3 bg-white w-full" placeholder="Email address" type="text">
+                    @error('email')
+                    <div class="text-red-500">
+                        {{ $message }}
+                    </div>
+                    @enderror
+                </div>
+
                 <div class="bg-red flex-shrink-0 flex ">
-                    <button class="px-4 flex bg-green-400 ml-2  items-center">
+                    <button type="submit" class="px-4 flex bg-green-400 ml-2  items-center">
                         Get Started
                         <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
                         </svg>
                     </button>
                 </div>
-            </div>
+            </form>
         </div>
     </main>
 </section>

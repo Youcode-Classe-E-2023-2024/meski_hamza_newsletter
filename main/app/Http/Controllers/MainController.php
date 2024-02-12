@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Template;
-use App\Models\User;
+use App\Models\Subscriber;
 
 class MainController extends Controller
 {
@@ -12,7 +12,7 @@ class MainController extends Controller
         $boilerplate = 1;
         $templates = Template::where('boilerplate', 'newsletter1')->latest()->get();
 
-        $users = User::all();
+        $users = Subscriber::all();
         return view('main', compact('templates', 'users', 'boilerplate'));
     }
 
