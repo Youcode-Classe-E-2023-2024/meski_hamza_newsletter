@@ -11,6 +11,7 @@ use App\Http\Controllers\SubscribeController;
 use App\Http\Controllers\AssignRoleToUserController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\SendVideoController;
+use App\Http\Controllers\PdfController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -94,3 +95,4 @@ Route::post('/videos/{template}', [SendVideoController::class, 'send'])->name('v
 Route::get('/template/{template}/renderVideo', [MainController::class, 'renderVideoTemplate'])->name('templates.renderVideoTemplate');
 
 /* download as pdf route */
+Route::get('/download/{template}', [PdfController::class, 'download'])->name('template.download');
