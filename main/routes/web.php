@@ -9,6 +9,8 @@ use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\SendTmeplateController;
 use App\Http\Controllers\SubscribeController;
 use App\Http\Controllers\AssignRoleToUserController;
+use App\Http\Controllers\VideoController;
+use App\Http\Controllers\SendVideoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -78,3 +80,17 @@ Route::get('/subscribe/section', function() {
 
 /* Assign Role To user route */
 Route::post('/users/{user}', [AssignRoleToUserController::class, 'assignRoleToUser'])->name('users.assignRoleToUser');
+
+/* displaying videos */
+Route::get('/vidoes/form', [VideoController::class, 'videoForm'])->name('videoForm');
+
+/* uploading videos */
+Route::post('/videos/upload', [VideoController::class, 'uploadVideo'])->name('uploadVideo');
+
+/* send video route */
+Route::post('/videos/{template}', [SendVideoController::class, 'send'])->name('videos.send');
+
+/* render video route */
+Route::get('/template/{template}/renderVideo', [MainController::class, 'renderVideoTemplate'])->name('templates.renderVideoTemplate');
+
+/* download as pdf route */

@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b7f8b1-12c0-43ce-855f-55052de2503b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/resources/views/videos/upload-video-form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Models/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Models/Template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/main/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/main/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/admin/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter1.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/js-script/script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/js-script/script.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/resources/views/layout/side-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/side-bar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/resources/views/main/main-auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/main/main-auth.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/routes/web.php" afterDir="false" />
@@ -256,7 +245,7 @@
       <workItem from="1707725464419" duration="28644000" />
       <workItem from="1707811557245" duration="11412000" />
       <workItem from="1707828355318" duration="12140000" />
-      <workItem from="1707899874055" duration="3630000" />
+      <workItem from="1707899874055" duration="17984000" />
     </task>
     <servers />
   </component>
