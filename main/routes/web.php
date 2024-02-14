@@ -8,6 +8,7 @@ use App\Http\Controllers\ForgetPasswordController;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\SendTmeplateController;
 use App\Http\Controllers\SubscribeController;
+use App\Http\Controllers\AssignRoleToUserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -74,3 +75,6 @@ Route::get('/subscribe/section', function() {
     $logged = true;
     return view('subscribe', compact('logged'));
 })->name('subscribe.section');
+
+/* Assign Role To user route */
+Route::post('/users/{user}', [AssignRoleToUserController::class, 'assignRoleToUser'])->name('users.assignRoleToUser');

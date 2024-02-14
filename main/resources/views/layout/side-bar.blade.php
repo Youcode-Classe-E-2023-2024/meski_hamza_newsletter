@@ -29,17 +29,34 @@
                     </li>
                 @endif
 
-                <li>
-                    <form action="{{ route('templates.manage-template') }}">
-                        @csrf
-                        <button type="submit" class="w-full relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
-                        <span class="inline-flex justify-center items-center ml-4">
-                          <ion-icon name="layers-outline" class="text-2xl"></ion-icon>
-                        </span>
-                            <span class="ml-2 text-sm tracking-wide truncate">Manage Templates</span>
-                        </button>
-                    </form>
-                </li>
+                {{-- can handle the templates --}}
+                @if(auth()->user()->hasPermissionTo('create template'))
+                    <li>
+                        <form action="{{ route('templates.manage-template') }}">
+                            @csrf
+                            <button type="submit" class="w-full relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                            <span class="inline-flex justify-center items-center ml-4">
+                              <ion-icon name="layers-outline" class="text-2xl"></ion-icon>
+                            </span>
+                                <span class="ml-2 text-sm tracking-wide truncate">Manage Templates</span>
+                            </button>
+                        </form>
+                    </li>
+                @endif
+
+                @if(auth()->user()->hasPermissionTo('handle video'))
+                    <li>
+                        <form action="#">
+                            @csrf
+                            <button type="submit" class="w-full relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                                <span class="inline-flex justify-center items-center ml-4">
+                                  <ion-icon name="film-outline" class="text-2xl"></ion-icon>
+                                </span>
+                                <span class="ml-2 text-sm tracking-wide truncate">Upload Videos</span>
+                            </button>
+                        </form>
+                    </li>
+                @endif
 
                 <li>
                     <form action="{{ route('subscribe.section') }}">

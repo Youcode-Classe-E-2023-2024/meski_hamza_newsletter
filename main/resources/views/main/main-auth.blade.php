@@ -1,4 +1,4 @@
-<main class="m-20">
+<main id="templates-container" class="m-20">
     <div class="flex items-center mb-12">
         <h1 class="mr-2">CATEGORIES:</h1>
         <a href="{{ route('boilerplate', 1) }}" class="mr-2 hover:text-green-200 px-2 py-1 {{ $boilerplate == 1 ? 'bg-green-500':'' }}">newsletter1</a>

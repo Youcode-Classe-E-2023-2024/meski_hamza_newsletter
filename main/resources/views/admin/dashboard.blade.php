@@ -1,4 +1,4 @@
 @extends('layout.layout')
 @section('content')
-    <h>Admin Dashboard</h>
+    <livewire:dashboard/>
 @endsection

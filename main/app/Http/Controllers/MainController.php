@@ -22,7 +22,7 @@ class MainController extends Controller
         if($boilerplate == 2) $templates = Template::where('boilerplate', 'newsletter2')->latest()->get();
         if($boilerplate == 3) $templates = Template::where('boilerplate', 'newsletter3')->latest()->get();
 
-        $users = User::all();
+        $users = Subscriber::all();
         return view('main', compact('templates', 'users', 'boilerplate'));
     }
 

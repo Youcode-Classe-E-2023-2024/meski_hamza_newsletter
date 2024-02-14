@@ -5,21 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b7f8b1-12c0-43ce-855f-55052de2503b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main/resources/views/js-script/script.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/resources/views/send-boilerplate.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/resources/views/templates/layout/multi-select-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/TemplateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/TemplateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/main/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/app/Models/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Models/Template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/main/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/main/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/admin/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter1.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter3.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/js-script/script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/js-script/script.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/side-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/side-bar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/resources/views/main/main-auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/main/main-auth.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/templates/manage-template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/templates/manage-template.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/templates/show-template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/hello.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,20 +225,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -252,6 +253,10 @@
       <workItem from="1707554712146" duration="7361000" />
       <workItem from="1707564911512" duration="32858000" />
       <workItem from="1707644037924" duration="35900000" />
+      <workItem from="1707725464419" duration="28644000" />
+      <workItem from="1707811557245" duration="11412000" />
+      <workItem from="1707828355318" duration="12140000" />
+      <workItem from="1707899874055" duration="3630000" />
     </task>
     <servers />
   </component>
