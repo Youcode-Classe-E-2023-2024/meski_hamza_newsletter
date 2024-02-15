@@ -4,28 +4,29 @@
     const templatesContainer = document.getElementById('templates-container');
     if(templatesContainer) {
         window.openModal = function(modalId) {
-            document.getElementById(modalId).style.display = 'block'
-            document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden')
+            document.getElementById(modalId).style.display = 'block';
+            document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden');
             const checkBoxSpan = document.querySelectorAll('.checkBoxSpan');
             const checkBox = document.querySelectorAll('.checkBox');
 
             for (let i = 0; i < checkBoxSpan.length; i++) {
                 checkBoxSpan[i].addEventListener('click', function(event) {
-                    if(checkBox[i].checked) checkBox[i].checked = false;
+                    if (checkBox[i].checked) checkBox[i].checked = false;
                     else checkBox[i].checked = true;
                 });
             }
         }
 
         window.closeModal = function(modalId) {
-            document.getElementById(modalId).style.display = 'none'
-            const checkBox = document.querySelectorAll('.checkBox')
+            document.getElementById(modalId).style.display = 'none';
+            const checkBox = document.querySelectorAll('.checkBox');
 
-            for(let i = 0; i < checkBox.length; i++) {
-                if(checkBox[i].checked == true) checkBox[i].checked = false
+            for (let i = 0; i < checkBox.length; i++) {
+                if (checkBox[i].checked == true) checkBox[i].checked = false;
             }
-            document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
+            document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden');
         }
+
 
         // Close all modals when press ESC
         document.onkeydown = function(event) {

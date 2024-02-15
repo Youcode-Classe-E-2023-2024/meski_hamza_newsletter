@@ -1,11 +1,11 @@
-<button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2" onclick="openModal('modelConfirm')">
+<button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2" onclick="openModal('modelConfirm{{$template->id}}')">
     send newsletter
 </button>
-<div id="modelConfirm" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ">
+<div id="modelConfirm{{$template->id}}" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ">
     <div class=" relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-md">
 
         <div class="flex justify-end p-2">
-            <button onclick="closeModal('modelConfirm')" type="button"
+            <button onclick="closeModal('modelConfirm{{$template->id}}')" type="button"
                     class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
