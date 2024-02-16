@@ -66,6 +66,8 @@ Route::put('/template/{template}', [TemplateController::class, 'update'])->name(
 
 Route::delete('/template/{template}', [TemplateController::class, 'destroy'])->name('templates.destroy');
 
+Route::post('/template/{template}/restore', [TemplateController::class, 'restore'])->name('templates.restore');
+
 /* Send template route */
 Route::post('/template/{template}/send', [SendTmeplateController::class, 'send'])->name('templates.send');
 

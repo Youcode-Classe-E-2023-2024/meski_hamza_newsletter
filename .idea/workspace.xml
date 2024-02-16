@@ -5,23 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b7f8b1-12c0-43ce-855f-55052de2503b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main/resources/views/templates/layout/my-templates.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/resources/views/templates/layout/deletedTemplates.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/PdfController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/PdfController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/SendTmeplateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/SendTmeplateController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/TemplateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/TemplateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Livewire/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Livewire/Dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/database/seeders/AssignRolesToUserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/database/seeders/AssignRolesToUserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter1.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter3.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/js-script/script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/js-script/script.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/nav-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/nav-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/side-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/side-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/templates/manage-template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/templates/manage-template.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/app/Models/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Models/Template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/templates/layout/my-templates.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/templates/layout/my-templates.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -262,7 +251,7 @@
       <workItem from="1707984559133" duration="19623000" />
       <workItem from="1708021149151" duration="10945000" />
       <workItem from="1708070269417" duration="25318000" />
-      <workItem from="1708109525197" duration="4865000" />
+      <workItem from="1708109525197" duration="7497000" />
     </task>
     <servers />
   </component>

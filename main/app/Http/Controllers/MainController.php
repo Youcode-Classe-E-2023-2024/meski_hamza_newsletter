@@ -53,6 +53,6 @@ class MainController extends Controller
     }
 
     public function deletedTemplates() {
-        return view('templates.layout.my-templates');
+        return view('templates.layout.deletedTemplates');
     }
 }

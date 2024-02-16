@@ -63,7 +63,12 @@ class TemplateController extends Controller
 
 
     public function destroy(Template $template) {
-        $template->delete();
+        $template->update(['is_deleted' => true]);
         return redirect()->route('mytemplates');
+    }
+
+    public function restore(Template $template) {
+        $template->update(['is_deleted' => false]);
+        return redirect()->route('deletedTemplates');
     }
 }
