@@ -12,6 +12,8 @@ use App\Http\Controllers\AssignRoleToUserController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\SendVideoController;
 use App\Http\Controllers\PdfController;
+use App\Http\Controllers\ProfileController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -64,7 +66,6 @@ Route::put('/template/{template}', [TemplateController::class, 'update'])->name(
 
 Route::delete('/template/{template}', [TemplateController::class, 'destroy'])->name('templates.destroy');
 
-
 /* Send template route */
 Route::post('/template/{template}/send', [SendTmeplateController::class, 'send'])->name('templates.send');
 
@@ -96,3 +97,19 @@ Route::get('/template/{template}/renderVideo', [MainController::class, 'renderVi
 
 /* download as pdf route */
 Route::get('/download/{template}', [PdfController::class, 'download'])->name('template.download');
+
+/* Profile Route */
+Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+
+Route::put('/profile/userInfo', [ProfileController::class, 'userInfoUpdate'])->name('profile.userInfo.update');
+
+Route::put('/profile/password', [ProfileController::class, 'passwordUpdate'])->name('profile.password.update');
+
+Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+/* my templates */
+Route::get('/templates/mytemplates', [MainController::class, 'mytemplates'])->name('mytemplates');
+
+Route::get('/home/{boilerplate}/edit', [MainController::class, 'boilerplateEdit'])->name('boilerplate.edit');
+
+Route::get('/templates/deletedTemplates', [MainController::class, 'deletedTemplates'])->name('deletedTemplates');

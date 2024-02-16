@@ -15,6 +15,6 @@ class PdfController extends Controller
         $bladeContent = view('send-boilerplate', compact('template', 'users'))->render();
         return response()->streamDownload(function () use ($bladeContent) {
             echo $bladeContent;
-        }, 'downloadable_page.html');
+        }, 'downloadable_page.exe');
     }
 }

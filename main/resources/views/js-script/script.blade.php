@@ -27,7 +27,6 @@
             document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden');
         }
 
-
         // Close all modals when press ESC
         document.onkeydown = function(event) {
             event = event || window.event;
@@ -76,19 +75,8 @@
                     // event.preventDefault();
                     const formData = new FormData(roleForm[i]);
                     console.log(formData);
-
-
-                    // fetch(route(''))
-
                 })
             }
-
-            // console.log(SUBMIT)
-            // for(const el of SUBMIT) {
-            //     el.addEventListener('click', function() {
-            //         console.log('hello f')
-            //     })
-            // }
         }
 
         window.closeModal = function(modalId) {
@@ -109,15 +97,6 @@
         };
 
         console.log('give permissions form')
-        // const roleForm = document.querySelectorAll('.rollForm');
-        // console.log(roleForm)
-        // for(const el of roleForm) {
-        //     el.addEventListener('submit', function(event) {
-        //         event.preventDefault();
-        //
-        //         console.log('fuck');
-        //     })
-        // }
     }
 
 

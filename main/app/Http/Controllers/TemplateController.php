@@ -16,12 +16,14 @@ class TemplateController extends Controller
     }
 
     public function store() {
+//        dd(\request()->file());
+
         $validated = request()->validate([
             'name' => 'required|min:5',
             'subject' => 'required|min:5',
             'content' => 'required|min:5',
             'boilerplate' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:4048'
+            'image' => 'required|max:4048'
         ]);
 
         $validated['user_id'] = auth()->id();
@@ -33,7 +35,6 @@ class TemplateController extends Controller
         return redirect()->route('main');
     }
 
-
     public function edit(Template $template) {
         $editing = true;
         return view('templates.manage-template', compact('template', 'editing'));
@@ -41,22 +42,28 @@ class TemplateController extends Controller
 
     public function update(Template $template) {
         $validated = request()->validate([
-            'title' => 'required|min:5',
+            'name' => 'required|min:5',
+            'subject' => 'required|min:5',
             'content' => 'required|min:5',
-            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
+            'image' => 'required|image|max:4048'
         ]);
 
         $template->update([
-            'title' => $validated['title'],
+            'name' => $validated['name'],
+            'subject' => $validated['subject'],
             'content' => $validated['content'],
         ]);
 
-        $template->addMediaFromRequest('image')->toMediaCollection('image');
+        $template->clearMediaCollection('media');
 
-        return redirect()->route('main');
+        $template->addMediaFromRequest('image')->toMediaCollection('media');
+
+        return redirect()->route('mytemplates');
     }
+
+
     public function destroy(Template $template) {
         $template->delete();
-        return redirect()->route('main');
+        return redirect()->route('mytemplates');
     }
 }

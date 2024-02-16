@@ -8,7 +8,6 @@ use App\Models\User;
 
 use Livewire\WithPagination;
 
-
 class Dashboard extends Component
 {
     use WithPagination;

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\User;
 use function Laravel\Prompts\password;
+use Hash;
 
 class AuthController extends Controller
 {
@@ -22,7 +23,7 @@ class AuthController extends Controller
             'bio' => 'required|min:5|max:200'
         ]);
 
-        $validated['password'] = bcrypt($validated['password']);
+        $validated['password'] = Hash::make($validated['password']);
 
         if(request()->hasFile('image')) {
             $imagePath = request()->file('image')->store('images', 'public');

@@ -8,11 +8,16 @@
     }
 </style>
 
-@if(isset($fromEmail) ?? null)
+@if(isset($mytemplates) ?? null)
 @else
-    <div class="">
-        @include('templates.layout.multi-select-form')
-    </div>
+    @if(auth()->user()->hasPermissionTo('send template'))
+        @if(isset($fromEmail) ?? null)
+        @else
+            <div class="">
+                @include('templates.layout.multi-select-form')
+            </div>
+        @endif
+    @endif
 @endif
 
 <div id="newsletter2-section" class="min-h-screen flex flex-col p-2 justify-center backdrop-blur-md border-2 border-solid border-green-500"  style="background-color: rgba(0, 0, 0, 0.603);">

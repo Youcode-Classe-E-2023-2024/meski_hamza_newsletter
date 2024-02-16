@@ -1,11 +1,17 @@
 <!-- component -->
 <div class="flex justify-center bg--500">
-    <div class="flex flex-col">
+    <div class="flex flex-col w-full">
         <div class="w-full lg:w-6/12 md:w-6/12 mx-3 md:mx-0 lg:mx-0">
-            @if(isset($fromEmail) ?? null)
+            @if(isset($mytemplates) ?? null)
             @else
-                @include('templates.layout.multi-select-form')
+                @if(auth()->user()->hasPermissionTo('send template'))
+                    @if(isset($fromEmail) ?? null)
+                    @else
+                        @include('templates.layout.multi-select-form')
+                    @endif
+                @endif
             @endif
+
         </div>
         <div class="rounded overflow-hidden border w-full lg:w-6/12 md:w-6/12 bg-white mx-3 md:mx-0 lg:mx-0">
             @if($template->getFirstMedia('media'))

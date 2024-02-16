@@ -36,4 +36,23 @@ class MainController extends Controller
         $fromEmail = true;
         return view('send-boilerplate', compact('template', 'fromEmail'));
     }
+
+    public function mytemplates() {
+//        $mytemplates = true;
+        return view('templates.layout.my-templates');
+    }
+
+    public function boilerplateEdit($boilerplate) {
+        $templates = Template::where('boilerplate', 'newsletter2')->latest()->get();
+        if($boilerplate == 1) $templates = Template::where('boilerplate', 'newsletter1')->latest()->get();
+        if($boilerplate == 2) $templates = Template::where('boilerplate', 'newsletter2')->latest()->get();
+        if($boilerplate == 3) $templates = Template::where('boilerplate', 'newsletter3')->latest()->get();
+        $users = Subscriber::all();
+
+        return view('templates.layout.my-templates', compact('templates', 'users', 'boilerplate'));
+    }
+
+    public function deletedTemplates() {
+        return view('templates.layout.my-templates');
+    }
 }

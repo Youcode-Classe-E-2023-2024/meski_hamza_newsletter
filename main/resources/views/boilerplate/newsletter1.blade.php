@@ -7,15 +7,18 @@
         transition: all 1s;
     }
 </style>
-
-@if(auth()->user()->hasPermissionTo('send template'))
-    @if(isset($fromEmail) ?? null)
-    @else
-        <div class="mx-40">
-            @include('templates.layout.multi-select-form')
-        </div>
+@if(isset($mytemplates) ?? null)
+@else
+    @if(auth()->user()->hasPermissionTo('send template'))
+        @if(isset($fromEmail) ?? null)
+        @else
+            <div class="mx-40">
+                @include('templates.layout.multi-select-form')
+            </div>
+        @endif
     @endif
 @endif
+
 
 
 <!-- Blog post with featured image -->

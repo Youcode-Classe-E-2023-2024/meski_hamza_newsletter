@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Spatie\Permission\Traits\HasRoles;
 use Spatie\Permission\Models\Role;
+use App\Models\Template;
 
 
 class User extends Authenticatable
@@ -62,8 +63,4 @@ class User extends Authenticatable
     public function scopeSearch($query, $value) {
         $query->where('name', 'like', "%{$value}%")->orWhere('email', 'like', "%{$value}%");
     }
-
-//    public function roles(){
-//        return $this->belongsToMany(Role::class, 'model_has_roles', 'model_id');
-//    }
 }

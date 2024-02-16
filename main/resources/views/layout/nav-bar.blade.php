@@ -17,7 +17,7 @@
         <ul class="flex items-center">
             <li class="flex gap-2 items-center mr-4 hover:text-blue-100">
                 @auth
-                    <a href="#" class="flex items-center gap-2">
+                    <a href="{{ route('profile.edit') }}" class="flex items-center gap-2">
                         <span>
                             {{ auth()->user()->name }}
                         </span>
