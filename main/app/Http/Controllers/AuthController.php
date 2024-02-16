@@ -61,4 +61,9 @@ class AuthController extends Controller
         auth()->logout();
         return redirect()->route('main');
     }
+
+    public function destroy() {
+        auth()->user()->delete();
+        return redirect()->route('main');
+    }
 }

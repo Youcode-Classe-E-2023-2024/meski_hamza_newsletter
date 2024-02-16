@@ -9,7 +9,16 @@
         </p>
         </header>
 
-        <form class="flex items-center gap-4">
-            <button type="submit" class="bg-red-500 rounded-sm px-4 py-2 text-white">delete</button>
+        <form action="{{ route('user.delete') }}" method="post" class="flex items-center gap-4">
+            @csrf
+            @method('delete')
+            <button type="submit" onclick="confirmDelete()" class="bg-red-500 rounded-sm px-4 py-2 text-white">delete</button>
         </form>
+    <script>
+        function confirmDelete() {
+            if (confirm("Are you sure you want to delete your account? This action cannot be undone.")) {
+                document.getElementById("deleteForm").submit();
+            }
+        }
+    </script>
 </section>

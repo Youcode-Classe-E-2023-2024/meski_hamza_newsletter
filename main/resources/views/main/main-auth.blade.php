@@ -9,14 +9,16 @@
 
 
     @foreach($templates as $template)
-        @if($boilerplate == 1)
-            @include('boilerplate.newsletter1')
-        @elseif($boilerplate == 2)
-            @include('boilerplate.newsletter2')
-        @elseif($boilerplate == 3)
-            @include('boilerplate.newsletter3')
-        @elseif($boilerplate == 4)
-            @include('boilerplate.newsletterVideo')
+        @if($template->is_deleted == false)
+            @if($boilerplate == 1)
+                @include('boilerplate.newsletter1')
+            @elseif($boilerplate == 2)
+                @include('boilerplate.newsletter2')
+            @elseif($boilerplate == 3)
+                @include('boilerplate.newsletter3')
+            @elseif($boilerplate == 4)
+                @include('boilerplate.newsletterVideo')
+            @endif
         @endif
         <div class="my-6"></div>
     @endforeach

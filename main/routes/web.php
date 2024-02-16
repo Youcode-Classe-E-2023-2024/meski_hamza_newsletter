@@ -41,6 +41,8 @@ Route::post('/login', [AuthController::class, 'authenticate'])->name('login.auth
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth');
 
+Route::delete('/user/delete', [AuthController::class, 'destroy'])->name('user.delete');
+
 /* Admin route */
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.show');
 
