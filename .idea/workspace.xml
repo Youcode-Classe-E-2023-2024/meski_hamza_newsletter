@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e1b7f8b1-12c0-43ce-855f-55052de2503b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/app/Models/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Models/Template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter1.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/livewire/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/livewire/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/templates/layout/multi-select-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/templates/layout/multi-select-form.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +273,7 @@
       <workItem from="1708021149151" duration="10945000" />
       <workItem from="1708070269417" duration="25318000" />
       <workItem from="1708109525197" duration="14916000" />
-      <workItem from="1708163635299" duration="20389000" />
+      <workItem from="1708163635299" duration="24182000" />
     </task>
     <servers />
   </component>

@@ -1,18 +1,7 @@
-@if(isset($mytemplates) ?? null)
-@else
-    @if(auth()->user()->hasPermissionTo('send template'))
-        @if(isset($fromEmail) ?? null)
-        @else
-            <div class="mx-40">
-                @include('templates.layout.multi-select-form')
-            </div>
-        @endif
-    @endif
-@endif
 
-<div class="max-w-screen-lg mx-auto p-5 sm:p-10 md:p-16">
 
-    <div class="mb-10 rounded overflow-hidden flex flex-col mx-auto backdrop-blur-sm">
+<div class="max-w-screen-lg mx-auto p-5 sm:p-10 md:p-8 backdrop-blur-sm bg-black bg-opacity-40 border-[1px] border-solid border-gray-300 rounded-md">
+    <div class="mb-10 rounded overflow-hidden flex flex-col mx-auto">
         <a href="#"
            class="text-xl sm:text-4xl font-semibold inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">
             {{ $template->subject }}</a>
@@ -22,7 +11,7 @@
         <div class="text-gray-300 py-5 text-base leading-8">
             <h1 class="text-xl">{{ $template->name }}</h1>
             <p>
-                {{ $template->content }}
+                {{ Illuminate\Support\Str::limit($template->content, 500) }}
             </p>
         </div>
         <div class="py-5 text-sm font-regular text-gray-200 flex">
@@ -38,19 +27,33 @@
                         </g>
                     </g>
                 </svg>
-                <span class="ml-1">6 mins ago</span></span>
-            <a href="#" class="flex flex-row items-center hover:text-indigo-600">
-                <svg class="text-indigo-600" fill="currentColor" height="16px" aria-hidden="true" role="img"
-                     focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="currentColor"
-                          d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
-                    </path>
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                </svg>
-                <span class="ml-1">AliSher Azimi</span></a>
+                <span class="ml-1">{{ $template->created_at->diffForHumans() }}</span></span>
+            <div class="flex items-center justify-between">
+                <div class="flex flex-row items-center hover:text-indigo-600">
+                    <svg class="text-indigo-600" fill="currentColor" height="16px" aria-hidden="true" role="img"
+                         focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor"
+                              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+                        </path>
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                    </svg>
+                    <span class="ml-1">{{ $template->user->name }}</span>
+                </div>
+            </div>
         </div>
-        <hr>
-
     </div>
-
 </div>
+<div class="ml-16">
+    @if(isset($mytemplates) ?? null)
+    @else
+        @if(auth()->user()->hasPermissionTo('send template'))
+            @if(isset($fromEmail) ?? null)
+            @else
+                <div class="mx-40">
+                    @include('templates.layout.multi-select-form')
+                </div>
+            @endif
+        @endif
+    @endif
+</div>
+
