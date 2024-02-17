@@ -5,28 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b7f8b1-12c0-43ce-855f-55052de2503b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main/resources/views/images/display-images.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/resources/views/images/upload-image-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/PdfController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/PdfController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/SendTmeplateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/SendTmeplateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/TemplateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/TemplateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Models/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Models/Template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/main/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/main/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/database/seeders/AssignRolesToUserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/database/seeders/AssignRolesToUserSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter1.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter3.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/nav-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/nav-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/side-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/side-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/main/main-auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/main/main-auth.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/templates/manage-template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/templates/manage-template.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/livewire/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/livewire/dashboard.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +271,7 @@
       <workItem from="1708021149151" duration="10945000" />
       <workItem from="1708070269417" duration="25318000" />
       <workItem from="1708109525197" duration="14916000" />
-      <workItem from="1708163635299" duration="18386000" />
+      <workItem from="1708163635299" duration="20389000" />
     </task>
     <servers />
   </component>

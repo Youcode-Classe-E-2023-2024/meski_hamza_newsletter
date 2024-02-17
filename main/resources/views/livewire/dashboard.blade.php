@@ -1,5 +1,5 @@
 
-<div id="dashboard-container" class="mt-20 flex items-center justify-center">
+<div id="dashboard-container" class="mt-8 flex items-center justify-center">
     <section class="mt-10 w-full">
         <div class="mx-auto max-w-screen-xl px-4 lg:px-12">
             <!-- Start coding here -->
