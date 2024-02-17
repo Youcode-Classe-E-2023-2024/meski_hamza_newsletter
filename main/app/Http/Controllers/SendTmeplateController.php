@@ -10,7 +10,7 @@ class SendTmeplateController extends Controller
 {
     public function send(Template $template) {
         $usersEmails = request()->check;
-        dd($usersEmails);
+//        dd($usersEmails);
         $boilerplate = $template->boilerplate;
         foreach ($usersEmails as $userEmail) {
             Mail::send('hello', compact('template', 'boilerplate'), function($message) use ($userEmail) {

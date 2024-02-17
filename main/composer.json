@@ -7,13 +7,18 @@
     "require": {
         "php": "^8.1",
         "barryvdh/laravel-dompdf": "*",
+        "barryvdh/laravel-snappy": "*",
+        "dompdf/dompdf": "*",
         "guzzlehttp/guzzle": "^7.2",
+        "knplabs/knp-snappy": "^1.5",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^3.4",
+        "mpdf/mpdf": "*",
         "spatie/laravel-medialibrary": "11.0.0",
-        "spatie/laravel-permission": "^6.3"
+        "spatie/laravel-permission": "^6.3",
+        "tecnickcom/tcpdf": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

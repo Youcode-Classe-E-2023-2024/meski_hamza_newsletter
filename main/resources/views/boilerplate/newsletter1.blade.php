@@ -1,11 +1,11 @@
 <style>
-    #newsletter1-section:hover {
-        box-shadow: 10px 10px 2px 0px rgba(4,216,46,0.75);
-        -webkit-box-shadow: 10px 10px 2px 0px rgba(4,216,46,0.75);
-        -moz-box-shadow: 10px 10px 2px 0px rgba(4,216,46,0.75);
-        margin-bottom: 10px;
-        transition: all 1s;
-    }
+    /*#newsletter1-section:hover {*/
+    /*    box-shadow: 10px 10px 2px 0px rgba(4,216,46,0.75);*/
+    /*    -webkit-box-shadow: 10px 10px 2px 0px rgba(4,216,46,0.75);*/
+    /*    -moz-box-shadow: 10px 10px 2px 0px rgba(4,216,46,0.75);*/
+    /*    margin-bottom: 10px;*/
+    /*    transition: all 1s;*/
+    /*}*/
 </style>
 @if(isset($mytemplates) ?? null)
 @else
@@ -31,9 +31,10 @@
         </div>
 
         <!-- Featured image -->
-        @if($template->getFirstMedia('media'))
-            <img class="h-full object-cover" src="{{ $template->getFirstMedia('media')->getUrl() }}" width="733" height="412" />
-        @endif
+        {{--        @if($template->getFirstMedia('media'))--}}
+        {{--            <img class="h-full object-cover" src="{{ $template->getFirstMedia('media')->getUrl() }}" width="733" height="412" />--}}
+        {{--        @endif--}}
+        <img class="h-full object-cover" src="{{ $template->image }}" width="733" height="412" />
 
         <!-- Blog post content -->
         <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">

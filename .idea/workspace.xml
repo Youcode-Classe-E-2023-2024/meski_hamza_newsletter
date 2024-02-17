@@ -5,10 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b7f8b1-12c0-43ce-855f-55052de2503b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/main/resources/views/images/display-images.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/resources/views/images/upload-image-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/PdfController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/PdfController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/SendTmeplateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/SendTmeplateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/app/Http/Controllers/TemplateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Http/Controllers/TemplateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/app/Models/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/app/Models/Template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/main/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/main/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/database/seeders/AssignRolesToUserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/database/seeders/AssignRolesToUserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/boilerplate/newsletter3.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/nav-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/nav-bar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/layout/side-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/layout/side-bar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/resources/views/main/main-auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/main/main-auth.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/resources/views/profile/partials/delete-user-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/profile/partials/delete-user-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/resources/views/templates/manage-template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/resources/views/templates/manage-template.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,6 +220,29 @@
       <path value="$PROJECT_DIR$/main/vendor/carbonphp/carbon-doctrine-types" />
       <path value="$PROJECT_DIR$/main/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/main/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/main/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/main/vendor/spatie/temporary-directory" />
+      <path value="$PROJECT_DIR$/main/vendor/spatie/laravel-medialibrary" />
+      <path value="$PROJECT_DIR$/main/vendor/spatie/laravel-package-tools" />
+      <path value="$PROJECT_DIR$/main/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/main/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/main/vendor/spatie/image" />
+      <path value="$PROJECT_DIR$/main/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/main/vendor/setasign/fpdi" />
+      <path value="$PROJECT_DIR$/main/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/main/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/main/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/main/vendor/knplabs/knp-snappy" />
+      <path value="$PROJECT_DIR$/main/vendor/mpdf/mpdf" />
+      <path value="$PROJECT_DIR$/main/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/main/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/main/vendor/barryvdh/laravel-snappy" />
+      <path value="$PROJECT_DIR$/main/vendor/tecnickcom/tcpdf" />
     </include_path>
   </component>
   <component name="ProjectId" id="2c8MtcoKmDkxJBzNPgpFCEJvHN2" />
@@ -249,7 +289,8 @@
       <workItem from="1707984559133" duration="19623000" />
       <workItem from="1708021149151" duration="10945000" />
       <workItem from="1708070269417" duration="25318000" />
-      <workItem from="1708109525197" duration="9345000" />
+      <workItem from="1708109525197" duration="14916000" />
+      <workItem from="1708163635299" duration="18386000" />
     </task>
     <servers />
   </component>

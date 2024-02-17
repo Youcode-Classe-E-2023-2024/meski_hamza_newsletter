@@ -17,6 +17,7 @@ class Template extends Model implements HasMedia
         'subject',
         'content',
         'boilerplate',
-        'is_deleted'
+        'is_deleted',
+        'image'
     ];
 }

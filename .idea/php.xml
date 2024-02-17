@@ -175,6 +175,29 @@
       <path value="$PROJECT_DIR$/main/vendor/carbonphp/carbon-doctrine-types" />
       <path value="$PROJECT_DIR$/main/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/main/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/main/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/main/vendor/spatie/temporary-directory" />
+      <path value="$PROJECT_DIR$/main/vendor/spatie/laravel-medialibrary" />
+      <path value="$PROJECT_DIR$/main/vendor/spatie/laravel-package-tools" />
+      <path value="$PROJECT_DIR$/main/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/main/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/main/vendor/spatie/image" />
+      <path value="$PROJECT_DIR$/main/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/main/vendor/setasign/fpdi" />
+      <path value="$PROJECT_DIR$/main/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/main/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/main/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/main/vendor/knplabs/knp-snappy" />
+      <path value="$PROJECT_DIR$/main/vendor/mpdf/mpdf" />
+      <path value="$PROJECT_DIR$/main/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/main/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/main/vendor/barryvdh/laravel-snappy" />
+      <path value="$PROJECT_DIR$/main/vendor/tecnickcom/tcpdf" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2">

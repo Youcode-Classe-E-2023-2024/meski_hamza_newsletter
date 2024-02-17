@@ -38,7 +38,6 @@ class MainController extends Controller
     }
 
     public function mytemplates() {
-//        $mytemplates = true;
         return view('templates.layout.my-templates');
     }
 

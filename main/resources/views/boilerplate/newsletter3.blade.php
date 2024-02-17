@@ -14,9 +14,10 @@
 
         </div>
         <div class="rounded overflow-hidden border w-full lg:w-6/12 md:w-6/12 bg-white mx-3 md:mx-0 lg:mx-0">
-            @if($template->getFirstMedia('media'))
-                <div class="h-[400px] w-full" style="background-image: url('{{ $template->getFirstMedia('media')->getUrl() }}'); background-size: cover;"></div>
-            @endif
+{{--            @if($template->getFirstMedia('media'))--}}
+{{--                <div class="h-[400px] w-full" style="background-image: url('{{ $template->getFirstMedia('media')->getUrl() }}'); background-size: cover;"></div>--}}
+{{--            @endif--}}
+            <div class="h-[400px] w-full" style="background-image: url('{{ $template->image }}'); background-size: cover;"></div>
 
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h1 class="text-xl text-black font-bold mb-4">{{ $template->name }}</h1>

@@ -42,6 +42,39 @@
                             </button>
                         </form>
                     </li>
+                    <li>
+                        <form action="{{ route('mytemplates', 1) }}">
+                            @csrf
+                            <button type="submit" class="w-full relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                            <span class="inline-flex justify-center items-center ml-4">
+                              <ion-icon name="receipt-outline" class="text-2xl"></ion-icon>
+                            </span>
+                                <span class="ml-2 text-sm tracking-wide truncate">My Templates</span>
+                            </button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="{{ route('images.show') }}">
+                            @csrf
+                            <button type="submit" class="w-full relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                            <span class="inline-flex justify-center items-center ml-4">
+                              <ion-icon name="flower-outline" class="text-2xl"></ion-icon>
+                            </span>
+                                <span class="ml-2 text-sm tracking-wide truncate">Explore Medias</span>
+                            </button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="{{ route('imageForm') }}">
+                            @csrf
+                            <button type="submit" class="w-full relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <ion-icon name="image-outline" class="text-2xl"></ion-icon>
+                        </span>
+                                <span class="ml-2 text-sm tracking-wide truncate">Upload Images</span>
+                            </button>
+                        </form>
+                    </li>
                 @endif
 
                 @if(auth()->user()->hasPermissionTo('handle video'))
@@ -69,7 +102,17 @@
                         </button>
                     </form>
                 </li>
-
+                <li>
+                    <form action="{{ route('profile.edit') }}">
+                        @csrf
+                        <button type="submit" class="w-full relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <ion-icon name="person-outline" class="text-2xl"></ion-icon>
+                        </span>
+                            <span class="ml-2 text-sm tracking-wide truncate">Profile</span>
+                        </button>
+                    </form>
+                </li>
                 <li>
                     <form action="{{ route('logout') }}" method="post">
                         @csrf

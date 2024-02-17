@@ -13,9 +13,9 @@ class AssignRolesToUserSeeder extends Seeder
         $user = User::where('email', 'hamza@gmail.com')->first();
         $user->assignRole('admin');
 
-        $users = User::all();
-        foreach ($users as $user) {
-            $user->assignRole('member');
-        }
+//        $users = User::all();
+//        foreach ($users as $user) {
+//            $user->assignRole('member');
+//        }
     }
 }

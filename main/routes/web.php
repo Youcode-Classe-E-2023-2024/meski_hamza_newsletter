@@ -13,6 +13,7 @@ use App\Http\Controllers\VideoController;
 use App\Http\Controllers\SendVideoController;
 use App\Http\Controllers\PdfController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -117,3 +118,10 @@ Route::get('/templates/mytemplates', [MainController::class, 'mytemplates'])->na
 Route::get('/home/{boilerplate}/edit', [MainController::class, 'boilerplateEdit'])->name('boilerplate.edit');
 
 Route::get('/templates/deletedTemplates', [MainController::class, 'deletedTemplates'])->name('deletedTemplates');
+
+/* images upload route */
+Route::get('/images/form', [ImageController::class, 'imageForm'])->name('imageForm');
+
+Route::get('/images/show', [ImageController::class, 'show'])->name('images.show');
+
+Route::post('/images/uploadImage', [ImageController::class, 'store'])->name('uploadImage');

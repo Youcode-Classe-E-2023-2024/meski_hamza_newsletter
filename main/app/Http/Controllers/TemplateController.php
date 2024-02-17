@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Template;
+use App\Models\Image;
 
 class TemplateController extends Controller
 {
     public function manage_template() {
-        return view('templates.manage-template');
+        $images = Image::latest()->get();
+        return view('templates.manage-template', compact('images'));
     }
 
     public function show(Template $template) {
@@ -16,23 +18,23 @@ class TemplateController extends Controller
     }
 
     public function store() {
-//        dd(\request()->file());
+//        dd(\request());
 
         $validated = request()->validate([
             'name' => 'required|min:5',
             'subject' => 'required|min:5',
             'content' => 'required|min:5',
             'boilerplate' => 'required',
-            'image' => 'required|max:4048'
+            'image' => 'required'
         ]);
 
         $validated['user_id'] = auth()->id();
 
         $template = Template::create($validated);
 
-        $template->addMediaFromRequest('image')->toMediaCollection('media');
+//        $template->addMediaFromRequest('image')->toMediaCollection('media');
 
-        return redirect()->route('main');
+        return redirect()->route('templates.manage-template');
     }
 
     public function edit(Template $template) {

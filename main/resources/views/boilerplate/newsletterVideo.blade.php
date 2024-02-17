@@ -1,12 +1,4 @@
-<style>
-    #newsletter1-section:hover {
-        box-shadow: 10px 10px 2px 0px rgba(4,216,46,0.75);
-        -webkit-box-shadow: 10px 10px 2px 0px rgba(4,216,46,0.75);
-        -moz-box-shadow: 10px 10px 2px 0px rgba(4,216,46,0.75);
-        margin-bottom: 10px;
-        transition: all 1s;
-    }
-</style>
+
 
 @if(auth()->user()->hasPermissionTo('send template'))
     @if(isset($fromEmail) ?? null)
@@ -19,7 +11,7 @@
 
 
 <!-- Blog post with featured image -->
-<div id="newsletter1-section" class="max-w-7xl mx-40 px-4 sm:px-6 lg:px-8 backdrop-blur-md border-2 border-solid border-green-500 py-4" style="background-color: rgba(0, 0, 0, 0.603);">
+<div id="newsletter1-section" class="max-w-7xl mx-40 px-4 sm:px-6 lg:px-8 backdrop-blur-md border-2 border-solid border-red-500 py-4" style="background-color: rgba(0, 0, 0, 0.603);">
     <div class="max-w-3xl mx-auto">
 
         <!-- Featured image -->
