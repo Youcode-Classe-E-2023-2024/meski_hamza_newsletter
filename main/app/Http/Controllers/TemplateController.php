@@ -47,7 +47,7 @@ class TemplateController extends Controller
             'name' => 'required|min:5',
             'subject' => 'required|min:5',
             'content' => 'required|min:5',
-            'image' => 'required|image|max:4048'
+//            'image' => 'required|image|max:4048'
         ]);
 
         $template->update([
@@ -56,9 +56,9 @@ class TemplateController extends Controller
             'content' => $validated['content'],
         ]);
 
-        $template->clearMediaCollection('media');
-
-        $template->addMediaFromRequest('image')->toMediaCollection('media');
+//        $template->clearMediaCollection('media');
+//
+//        $template->addMediaFromRequest('image')->toMediaCollection('media');
 
         return redirect()->route('mytemplates');
     }

@@ -3,7 +3,6 @@
 
 @section('content')
     <main id="templates-container" class="m-20 ">
-        <a href="{{ route('deletedTemplates') }}" class="border-b-2 border-red-500 hover:border-red-700 text-red-500 hover:text-red-700">Deleted Templates</a>
     @foreach(auth()->user()->templates as $template)
         @if($template->is_deleted == false)
                 <div class="mb-4 bg-black p-8 rounded-lg shadow-md mt-6">
@@ -65,15 +64,6 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="mb-4">
-                                                    <label for="image" class="block text-gray-700 text-sm font-bold mb-2">Image</label>
-                                                    <input type="file" id="image" name="image">
-                                                    <div class="text-red-500">
-                                                        @error('image')
-                                                        {{ $message }}
-                                                        @enderror
-                                                    </div>
-                                                </div>
                                                 <button type="submit"
                                                         class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">
                                                     update
@@ -114,14 +104,7 @@
                         </div>
                     </div>
                     <div class="grid grid-cols-2">
-                        @php
-                            $lastMedia = $template->getMedia('media')->last();
-                        @endphp
-
-                        @if($lastMedia)
-                            <img width="500" class="mt-4 h-full object-cover rounded" src="{{ $lastMedia->getUrl() }}" alt="Template Image" />
-                        @endif
-
+                        <img width="500" class="mt-4 h-full object-cover rounded" src="{{ $template->image }}" alt="Template Image" />
                         <div class="flex ">
                             <div>
 

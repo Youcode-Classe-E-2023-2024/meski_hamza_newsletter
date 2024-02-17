@@ -3,7 +3,6 @@
 
 @section('content')
     <main id="templates-container" class="m-20 ">
-        <a href="{{ route('mytemplates') }}" class="border-b-2 border-green-500 hover:border-green-700 text-green-500 hover:text-green-700">My Templates</a>
         @foreach(auth()->user()->templates as $template)
             @if($template->is_deleted == true)
                 <div class="mb-4 bg-black p-8 rounded-lg shadow-md mt-6">
@@ -20,14 +19,7 @@
                         </div>
                     </div>
                     <div class="grid grid-cols-2">
-                        @php
-                            $lastMedia = $template->getMedia('media')->last();
-                        @endphp
-
-                        @if($lastMedia)
-                            <img width="500" class="mt-4 h-full object-cover rounded" src="{{ $lastMedia->getUrl() }}" alt="Template Image" />
-                        @endif
-
+                        <img width="500" class="mt-4 h-full object-cover rounded" src="{{ $template->image }}" alt="Template Image" />
                         <div class="flex ">
                             <div>
                                 <h2 class="text-2xl font-semibold text-gray-300">{{ $template->name }}</h2>

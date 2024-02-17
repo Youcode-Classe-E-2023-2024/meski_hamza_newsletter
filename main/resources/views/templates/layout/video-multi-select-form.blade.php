@@ -1,5 +1,5 @@
-<button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2" onclick="openModal('modelConfirm{{$template->id}}')">
-    send newsletter
+<button class="border-b-[1px] border-l-[1px] border-r-[1px] border-solid border-gray-300 border-red-500 px-4 py-2 h-10 w-20 rounded-br-md rounded-bl-md" onclick="openModal('modelConfirm{{$template->id}}')">
+    <ion-icon name="arrow-redo-outline" class="text-2xl text-red-500"></ion-icon>
 </button>
 <div id="modelConfirm{{$template->id}}" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ">
     <div class=" relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-md">

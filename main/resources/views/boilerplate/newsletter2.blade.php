@@ -5,14 +5,14 @@
         <div data-theme="teal" class="mx-auto max-w-6xl p-10">
             <section class="font-sans text-black">
                 <div class="grid grid-cols-2">
-                    <div class="h-[500px] w-full" style="background-image: url('{{ $template->image }}'); background-size: cover; background-position: center"></div>
+                    <div class="h-[500px] w-[470px]" style="background-image: url('{{ $template->image }}'); background-size: cover; background-position: center"></div>
                     <div class="p-6 bg-grey">
                         <div class="leading-relaxed">
                             <h2 class="leading-tight text-4xl font-bold text-white">{{ $template->subject }}</h2>
                             <p class="mt-4 text-white ">{{ Illuminate\Support\Str::limit($template->content, 800) }}</p>
                             <div class="py-5 text-sm font-regular text-gray-200 flex">
             <span class="mr-3 flex flex-row items-center">
-                <svg class="text-indigo-600" fill="currentColor" height="13px" width="13px" version="1.1" id="Layer_1"
+                <svg class="text-green-500" fill="currentColor" height="13px" width="13px" version="1.1" id="Layer_1"
                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                     <g>
@@ -25,8 +25,8 @@
                 </svg>
                 <span class="ml-1">{{ $template->created_at->diffForHumans() }}</span></span>
                                 <div class="flex items-center justify-between">
-                                    <div class="flex flex-row items-center hover:text-indigo-600">
-                                        <svg class="text-indigo-600" fill="currentColor" height="16px" aria-hidden="true" role="img"
+                                    <div class="flex flex-row items-center hover:text-green-500">
+                                        <svg class="text-green-500" fill="currentColor" height="16px" aria-hidden="true" role="img"
                                              focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path fill="currentColor"
                                                   d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
